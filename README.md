@@ -1,8 +1,15 @@
-## Panoptic-SLAM-KITTI
+# Panoptic-SLAM-KITTI
 
 This work is an extension of panoptic-slam on the KITTI dataset, in a monocular form.
 
-Panoptic-SLAM specifically addresses the issue of dynamic object interference under RGB-D cameras. Considering that similar panoramic segmentation and data association techniques can also be transferred to monocular conditions, we have implemented its operation on the KITTI dataset. Note that our implementation is unofficial.
+Panoptic-SLAM specifically addresses the issue of dynamic object interference under RGB-D cameras. Considering that similar panoramic segmentation and data association techniques can also be transferred to monocular conditions, we have implemented its operation on the KITTI dataset.
+
+Note that our implementation is unofficial.
+
+## Some details
+
+1. We have implemented an interface for processing the KITTI dataset.
+2. Panoptic-SLAM was tested in indoor scenes. However, in outdoor scenes, moving objects are more often vehicles rather than people. So we add labels such as car and truck when determining movable objects, making it better suited for outdoor scenes.
 
 ## Acknowledgements
 Our code builds on [Panoptic-SLAM](https://github.com/iit-DLSLab/Panoptic-SLAM).
